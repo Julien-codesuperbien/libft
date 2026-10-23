@@ -6,7 +6,7 @@
 /*   By: julasne <julasne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:14:47 by julasne           #+#    #+#             */
-/*   Updated: 2026/10/22 14:16:43 by julasne          ###   ########.fr       */
+/*   Updated: 2026/10/23 21:10:42 by julasne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,17 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	const unsigned char	*d = (unsigned char *) s;
+	int					i;
 
 	i = 0;
-	while (s[i] != (unsigned char)c)
+	while (d[i] != (unsigned char)c)
 	{
-		if (s[i] == '\0')
+		if (d[i] == '\0')
 			return (NULL);
 		i++;
 	}
-	return ((char *)&s[i]);
+	return ((char *)&d[i]);
 }
 
 // #include <string.h>

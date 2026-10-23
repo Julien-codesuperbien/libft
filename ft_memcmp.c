@@ -6,10 +6,11 @@
 /*   By: julasne <julasne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 15:07:41 by julasne           #+#    #+#             */
-/*   Updated: 2026/10/21 15:25:57 by julasne          ###   ########.fr       */
+/*   Updated: 2026/10/23 12:39:02 by julasne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

@@ -6,7 +6,7 @@
 #    By: julasne <julasne@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/22 11:41:21 by julasne           #+#    #+#              #
-#    Updated: 2026/10/22 14:39:35 by julasne          ###   ########.fr        #
+#    Updated: 2026/10/24 00:19:07 by julasne          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,10 @@ SRC = 	ft_atoi.c \
 		ft_strrchr.c \
 		ft_tolower.c \
 		ft_toupper.c \
+		ft_strdup.c \
+		ft_substr.c \
+		ft_strjoin.c \
+		ft_strtrim.c \
 
 OBJ = $(SRC:.c=.o)
 
