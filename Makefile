@@ -6,7 +6,7 @@
 #    By: julasne <julasne@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/22 11:41:21 by julasne           #+#    #+#              #
-#    Updated: 2026/10/24 00:19:07 by julasne          ###   ########.fr        #
+#    Updated: 2026/10/27 16:26:28 by julasne          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,8 +41,14 @@ SRC = 	ft_atoi.c \
 		ft_substr.c \
 		ft_strjoin.c \
 		ft_strtrim.c \
-
-OBJ = $(SRC:.c=.o)
+		ft_split \
+		ft_itoa \
+		ft_strmapi \
+		ft_striteri \
+		ft_putchar_fd \
+		ft_putstr_fd \
+		ft_putendl_fd \
+		ft_putnbr_fd \
 
 all: $(NAME)
 

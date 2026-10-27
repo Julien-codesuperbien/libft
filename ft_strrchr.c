@@ -6,7 +6,7 @@
 /*   By: julasne <julasne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:32:11 by julasne           #+#    #+#             */
-/*   Updated: 2026/10/22 14:36:12 by julasne          ###   ########.fr       */
+/*   Updated: 2026/10/25 14:45:39 by julasne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,10 @@ char	*ft_strrchr(const char *s, int c)
 
 	i = 0;
 	temp = -1;
+	c = (unsigned char)c;
 	while (s[i])
 	{
-		if (s[i] == (unsigned char)c)
+		if (s[i] == (char)c)
 			temp = i;
 		i++;
 	}

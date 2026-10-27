@@ -6,7 +6,7 @@
 /*   By: julasne <julasne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 13:40:32 by julasne           #+#    #+#             */
-/*   Updated: 2026/10/22 18:44:39 by julasne          ###   ########.fr       */
+/*   Updated: 2026/10/25 15:22:24 by julasne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	lensrc;
 
 	i = 0;
-	lensrc = ft_strlen(src);
 	lendst = 0;
-
-	while (dst[lendst] && lendst < size)
+	while (lendst < size && dst[lendst])
 		lendst++;
-
 	if (lendst == size)
-		return (size + lensrc);
-
+		return (size + ft_strlen(src));
+	lensrc = ft_strlen(src);
 	while (src[i] && (lendst + i) < size - 1)
 	{
 		dst[lendst + i] = src[i];
