@@ -6,7 +6,7 @@
 #    By: julasne <julasne@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/22 11:41:21 by julasne           #+#    #+#              #
-#    Updated: 2026/10/27 16:26:28 by julasne          ###   ########.fr        #
+#    Updated: 2026/10/29 13:39:04 by julasne          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,16 @@ SRC = 	ft_atoi.c \
 		ft_putstr_fd \
 		ft_putendl_fd \
 		ft_putnbr_fd \
-
+		ft_lstnew \
+		ft_lstadd_front \
+		ft_lstsize \
+		ft_lstlast \
+		ft_lstadd_back \
+		ft_lstdelone \
+		ft_lstclear \
+		ft_lstiter \
+		ft_lstmap \
+		
 all: $(NAME)
 
 $(NAME): $(OBJ)

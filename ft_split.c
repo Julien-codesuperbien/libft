@@ -6,7 +6,7 @@
 /*   By: julasne <julasne@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 12:42:01 by julasne           #+#    #+#             */
-/*   Updated: 2026/10/26 16:53:18 by julasne          ###   ########.fr       */
+/*   Updated: 2026/10/28 13:56:52 by julasne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,6 @@ static int	fill_array(char const *s, char c, char **tab)
 	char	*chain;
 
 	i = 0;
-	
 	chain = (char *) s;
 	while (*chain)
 	{
